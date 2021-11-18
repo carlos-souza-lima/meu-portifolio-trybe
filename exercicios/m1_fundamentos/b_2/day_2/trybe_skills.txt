@@ -3,3 +3,5 @@ O que eu vou aprender na Trybe:
 - Unix
 - Bash
 - Git
+Nestes ultimos blocos aprendi como instalar/configura o lINUX.
+Como operar o GIT e o GITHUB.
