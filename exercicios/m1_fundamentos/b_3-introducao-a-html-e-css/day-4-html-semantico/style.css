@@ -42,11 +42,27 @@ h2{
   font-family: 'DM Sans', sans-serif;
   font-size: 30px;
 }
-.section p{
+.section p{ 
   font-size: 20px;
 }
 #article-image {
   border: 2px solid #e6b89c;
   border-radius: 100%;
-  width: cover;
+  width: 90%;
+  height: 5%;
+}
+.section-2 { 
+  text-align: center;
+  padding: 2%;
+  display: block;
+}
+.section-2 p{ 
+  font-size: 20px;
+}
+
+#section-2-image {
+  width: 50%;
+}
+.section-3{
+ 
 }
