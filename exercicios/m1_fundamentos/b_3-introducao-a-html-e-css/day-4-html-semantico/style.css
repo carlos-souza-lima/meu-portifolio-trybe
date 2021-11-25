@@ -45,3 +45,8 @@ h2{
 .section p{
   font-size: 20px;
 }
+#article-image {
+  border: 2px solid #e6b89c;
+  border-radius: 100%;
+  width: cover;
+}
