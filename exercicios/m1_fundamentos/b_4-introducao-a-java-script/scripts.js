@@ -50,7 +50,7 @@ console.log(perimeter); */
 
 //VIDEO 3 
 
-const nota = 74.5;
+/* const nota = 74.5;
 
 if (nota >= 80) {
     console.log("Parabéns, você foi aprovada(o)"); 
@@ -60,4 +60,13 @@ else if (nota < 80 && nota >= 60) {
 }
 else {
     console.log("Você foi reprovada(o)");
-}
+} */
+
+/* // momento 4 
+
+const conditionOne = true;
+const conditionTwo = true;
+
+console.log(conditionOne && conditionTwo); */
+
+
