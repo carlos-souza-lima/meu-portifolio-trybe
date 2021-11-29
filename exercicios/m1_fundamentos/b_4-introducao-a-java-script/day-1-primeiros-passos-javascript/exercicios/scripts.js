@@ -1,6 +1,7 @@
 /* SEÇÃO DAS VARIAVEIS E CONSTANTES */
-const firstNumber = 20;
-const secondNumber = 100;
+const firstNumber = 2000;
+const secondNumber = 10000;
+const thirdNumber = 506;
 let resultOperacao ;
 
 /* PARTE 1 */
@@ -37,4 +38,16 @@ if (firstNumber > secondNumber) {
     console.log("O maior numero é: ", firstNumber);
 } else {
     console.log("o maior numero é: ", secondNumber);
+}
+
+/* PARTE 3 */
+/* retorne o maior de tres numeros */
+if (firstNumber > secondNumber && firstNumber > thirdNumber ) {
+    console.log ("O número" , firstNumber, "é o maior dos três. ")
+} 
+else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+console.log ("O numero", secondNumber, "é o maior dos três");
+} 
+else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
+console.log("o numero", thirdNumber, "é  o maior dos três");
 }
