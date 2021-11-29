@@ -1,4 +1,4 @@
-/* PARTE 6 */
+/* PARTE 5 */
 
 const angulo2 = 80;
 const angulo1 = 50;
