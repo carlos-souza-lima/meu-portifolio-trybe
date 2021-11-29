@@ -93,11 +93,16 @@ console.log(message); */
 
 //momento 4.1
 
-let weekDay = "sabado";
+/* let weekDay = "sabado";
 
 if (weekDay == "sabado" || weekDay == "domingo") {
     console.log("FINALMENTE, descanso merecido UwU")
 }
 else {
     console.log("Oba, mais um dia de aprendizado na Trybe >:D")
-}
+} */
+
+/* 
+const squirtle = "melhor pokemon inicial";
+
+console.log(squirtle); // false */
