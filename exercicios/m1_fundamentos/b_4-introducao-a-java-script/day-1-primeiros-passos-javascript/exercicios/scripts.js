@@ -16,3 +16,9 @@ console.log(resultOperacao);
 /* 3° PROGRAMA MULTIPLICAÇÃO */
 resultOperacao = firstNumber * secondNumber; 
 console.log( resultOperacao);
+
+/* 4° PROGRAMA DIVISÃO */
+resultOperacao = firstNumber / secondNumber; 
+console.log(resultOperacao);
+resultOperacao = secondNumber / firstNumber;
+console.log(resultOperacao);
