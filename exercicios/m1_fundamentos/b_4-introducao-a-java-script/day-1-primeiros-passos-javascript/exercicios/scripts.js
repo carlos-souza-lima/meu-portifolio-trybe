@@ -1,6 +1,6 @@
 /* SEÇÃO DAS VARIAVEIS E CONSTANTES */
-const firstNumber = 10;
-const secondNumber = 35;
+const firstNumber = 20;
+const secondNumber = 10;
 let resultOperacao ;
 
 /* 1° PROGRAMA  ADIÇÃO */
@@ -21,4 +21,10 @@ console.log( resultOperacao);
 resultOperacao = firstNumber / secondNumber; 
 console.log(resultOperacao);
 resultOperacao = secondNumber / firstNumber;
+console.log(resultOperacao);
+
+/* 5° PROGRAMA MODULO (RESTO DA DIVISÃO) */
+resultOperacao = firstNumber % secondNumber;
+console.log(resultOperacao);
+resultOperacao = secondNumber % firstNumber;
 console.log(resultOperacao);
