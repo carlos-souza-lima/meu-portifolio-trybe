@@ -8,4 +8,5 @@ resultOperacao = firstNumber + secondNumber;
 console.log(resultOperacao);
 
 /* 2° PROGRAMA  */
-
+resultOperacao = firstNumber - secondNumber;
+console.log(resultOperacao); 
