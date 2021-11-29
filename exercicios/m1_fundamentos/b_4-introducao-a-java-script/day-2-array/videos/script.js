@@ -1,3 +1,6 @@
-let teste = [1 , 7, 0, 4];
+/* EXERCICIO 1 */
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 
-console.log(teste.sort());
+let menuServices = menu[1];
+
+console.log(menuServices);
