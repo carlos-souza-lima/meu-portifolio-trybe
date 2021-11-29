@@ -1,5 +1,5 @@
 /* SEÇÃO DAS VARIAVEIS E CONSTANTES */
-const firstNumber = 2000;
+const firstNumber = 200;
 const secondNumber = 10000;
 const thirdNumber = 506;
 let resultOperacao ;
@@ -50,4 +50,16 @@ console.log ("O numero", secondNumber, "é o maior dos três");
 } 
 else if (thirdNumber > firstNumber && thirdNumber > secondNumber) {
 console.log("o numero", thirdNumber, "é  o maior dos três");
+}
+
+/* PARTE 4 */
+/* dizer se onmumero é positivo ou negativo */
+if (firstNumber > 0) {
+    console.log("este numero é POSITIVO");
+} 
+else if (firstNumber < 0) {
+    console.log("este numero é NEGATIVO");
+}
+else {
+    console.log("este numero é ZERO");
 }
