@@ -17,3 +17,8 @@ info['recorrente'] = 'Sim';
 for (let key in info) {
     console.log(key)
 }
+
+/* EXERCICIO 4 */
+for (let i in info) {
+    console.log(info[i])
+}
