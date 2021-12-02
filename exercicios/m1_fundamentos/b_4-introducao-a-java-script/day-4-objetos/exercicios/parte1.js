@@ -66,3 +66,6 @@ leitor.livrosFavoritos[1] = {
 /* EXERCICIO 8 */
 
 console.log(leitor.nome, "tem", leitor.livrosFavoritos.length, "livros favoritos")
+
+
+/* PARTE 1 CONCLUIDA */
