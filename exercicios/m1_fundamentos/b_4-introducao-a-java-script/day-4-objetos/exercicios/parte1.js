@@ -54,3 +54,11 @@ let leitor = {
   };
  livro = leitor['livrosFavoritos']
   console.log("O livro favorito de", leitor.nome, leitor.sobrenome, "se chama", '"'+ leitor.livrosFavoritos[0]['titulo']+'"')
+
+/* EXERCICIO 7 */
+leitor.livrosFavoritos[1] = {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editor: 'Rocco',
+};
+/* console.log(leitor.livrosFavoritos) */
