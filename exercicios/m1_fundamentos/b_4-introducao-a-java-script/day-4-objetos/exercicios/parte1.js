@@ -62,3 +62,7 @@ leitor.livrosFavoritos[1] = {
     editor: 'Rocco',
 };
 /* console.log(leitor.livrosFavoritos) */
+
+/* EXERCICIO 8 */
+
+console.log(leitor.nome, "tem", leitor.livrosFavoritos.length, "livros favoritos")
