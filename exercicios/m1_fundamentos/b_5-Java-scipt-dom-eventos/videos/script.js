@@ -1,15 +1,13 @@
-/* criado no console do browser>:  */
+let teste = document.querySelector('#header-container')
 
-/*  
-document.getElementById('page-title').innerText = "Avengers";
-'Avengers'
+teste.style.color = "black";
 
-document.getElementById('second-paragraph').innerText = "estou muito cansado, preciso de ferrias"
-'estou muito cansado, preciso de ferrias'
+let section1 = document.querySelector('.emergency-tasks')
 
-document.getElementById('subtitle').innerText = 'melhor filme";
+section1.style.border = "solid 10px";
 
+let h = document.getElementsByClassName('emergency-tasks')
 
-document.getElementById('subtitle').innerText = "melhor filme";
-'melhor filme'
-*/
+h.style.color = "black";
+
+document.querySelector('body').style.backgroundColor = "blue"
