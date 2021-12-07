@@ -138,11 +138,27 @@
       // PARTE 2
 
       //exercicio 1
-      newHum.className = 'title';//funciona pois esta variavel ja foi declarada a cima, então seria so adicionar um nome a classe.
+          //funciona pois esta variavel ja foi declarada a cima, então seria so adicionar um nome a classe.
+      newHum.className = 'title';
       //ou 
-      //caso essa TAG ainda não tivesse sido capturada.
+          //caso essa TAG ainda não tivesse sido capturada.
       let classParaHum = document.querySelector('h1');
       classParaHum.className = 'title';
+
+      //exercicio 2
+      let tagsHTres = document.querySelectorAll('h3');
+          //captura as tags em uma NODELIST.
+      console.log(tagsHTres);
+        // quando a função for chamada vai executar o comando
+      function adicionaClass (tagsHTres) {
+        //para cada valor da NODELIST:
+        for (let k in tagsHTres) {
+            //adiciona a classe description.
+          tagsHTres[k].className = 'description';
+        }
+      }
+      //chama a função e declara o paramentro a ser usado
+      adicionaClass(tagsHTres)
   </script>  
 </body>
 </html>
