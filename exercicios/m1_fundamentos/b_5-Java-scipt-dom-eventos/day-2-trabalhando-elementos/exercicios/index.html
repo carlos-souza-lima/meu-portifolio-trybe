@@ -69,13 +69,22 @@
       console.log(newMain)
       document.body.appendChild(newMain);
 
-    // exercicio 3
-    let mainAnterior = document.getElementsByTagName('main')
-    console.log(mainAnterior);
-    let newSection = document.createElement('section');
-    newSection.className = 'center-content';
-    console.log(newSection);
-    mainAnterior[0].appendChild(newSection);
+     // exercicio 3
+     let mainAnterior = document.getElementsByTagName('main')
+     console.log(mainAnterior);
+     let newSection = document.createElement('section');
+     newSection.className = 'center-content';
+     console.log(newSection);
+     mainAnterior[0].appendChild(newSection);
+    
+    // exercicio 4
+    let sectionAnterior = document.getElementsByClassName('center-content');
+    console.log(sectionAnterior);
+    let newP = document.createElement('p');
+    newP.innerText = 'Estou apredendo JavaScript, Esta sendo bem complicado.';
+    console.log(newP);
+    sectionAnterior[0].appendChild(newP);
+    
     </script>
   </body>
 </html>
