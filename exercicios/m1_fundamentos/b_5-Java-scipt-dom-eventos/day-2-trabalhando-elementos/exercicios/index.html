@@ -106,7 +106,22 @@
       image.className = 'small-image';
       console.log(image);
       image.src = "https://picsum.photos/200";
-      section5Anterior[0].appendChild(image);    
+      section5Anterior[0].appendChild(image);
+
+      // exercicio 8
+      let elements = [
+        'um', 'dois', 'tres', 'quaatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'
+      ];
+      let section6Anterior = document.getElementsByClassName('right-content');
+      let newList = document.createElement('ul');
+      console.log(newList)
+      for (let elem of elements) {
+        let elemento = document.createElement('li')
+        elemento.innerText = elem;
+        newList.appendChild(elemento)
+      }
+      section6Anterior[0].appendChild(newList)
+
   </script>  
 </body>
 </html>
