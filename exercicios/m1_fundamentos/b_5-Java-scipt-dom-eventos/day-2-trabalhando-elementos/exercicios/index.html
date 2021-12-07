@@ -97,7 +97,16 @@
       let doisNewSection = document.createElement('section');
       doisNewSection.className = 'right-content';
       mainAnterior[0].appendChild(doisNewSection);
-      console.log(mainAnterior);      
-  </script>
+      console.log(mainAnterior);
+      
+      // exercicio 7 
+      let section5Anterior = document.getElementsByClassName('left-content');
+      console.log(section5Anterior);
+      let image = document.createElement('img');
+      image.className = 'small-image';
+      console.log(image);
+      image.src = "https://picsum.photos/200";
+      section5Anterior[0].appendChild(image);    
+  </script>  
 </body>
 </html>
