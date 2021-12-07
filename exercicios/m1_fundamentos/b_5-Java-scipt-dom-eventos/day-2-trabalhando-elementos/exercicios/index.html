@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .title {
-        text-align: center;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-        // exercicio 1
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+      // exercicio 1
       let newHum = document.createElement('h1');
       newHum.innerText = 'Exercício 5.2 - JavaScript';
       console.log(newHum);
@@ -69,22 +69,31 @@
       console.log(newMain)
       document.body.appendChild(newMain);
 
-     // exercicio 3
-     let mainAnterior = document.getElementsByTagName('main')
-     console.log(mainAnterior);
-     let newSection = document.createElement('section');
-     newSection.className = 'center-content';
-     console.log(newSection);
-     mainAnterior[0].appendChild(newSection);
+      // exercicio 3
+      let mainAnterior = document.getElementsByTagName('main')
+      console.log(mainAnterior);
+      let newSection = document.createElement('section');
+      newSection.className = 'center-content';
+      console.log(newSection);
+      mainAnterior[0].appendChild(newSection);
     
-    // exercicio 4
-    let sectionAnterior = document.getElementsByClassName('center-content');
-    console.log(sectionAnterior);
-    let newP = document.createElement('p');
-    newP.innerText = 'Estou apredendo JavaScript, Esta sendo bem complicado.';
-    console.log(newP);
-    sectionAnterior[0].appendChild(newP);
-    
-    </script>
-  </body>
+      // exercicio 4
+      let sectionAnterior = document.getElementsByClassName('center-content');
+      console.log(sectionAnterior);
+      let newP = document.createElement('p');
+      newP.innerText = 'Estou apredendo JavaScript, Esta sendo bem complicado.';
+      console.log(newP);
+      sectionAnterior[0].appendChild(newP);
+      
+      // exercicio 5
+      mainAnterior = document.getElementsByTagName('main')
+      let umaNewSection = document.createElement('section');
+      umaNewSection.className = 'left-content';
+      mainAnterior[0].appendChild(umaNewSection);
+      console.log(mainAnterior)
+
+      // exercicio 6
+      
+  </script>
+</body>
 </html>
