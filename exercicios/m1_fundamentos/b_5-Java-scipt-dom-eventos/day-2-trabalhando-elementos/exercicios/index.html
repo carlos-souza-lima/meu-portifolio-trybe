@@ -122,6 +122,18 @@
       }
       section6Anterior[0].appendChild(newList)
 
+      // exercicio 9 
+      mainAnterior = document.getElementsByClassName('main-content');
+      console.log(mainAnterior);
+      function createHTres(quant) { 
+        for (let i = 0; i < quant; i += 1) {
+          let h3PraCriar= document.createElement('h3');
+          console.log(h3PraCriar);
+          h3PraCriar.innerText = 'teste';
+          mainAnterior[0].appendChild(h3PraCriar);
+        }
+      }     
+      createHTres('3');    
   </script>  
 </body>
 </html>
