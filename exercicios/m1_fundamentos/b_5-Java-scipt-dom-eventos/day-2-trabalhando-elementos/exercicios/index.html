@@ -86,14 +86,18 @@
       sectionAnterior[0].appendChild(newP);
       
       // exercicio 5
-      mainAnterior = document.getElementsByTagName('main')
+      mainAnterior = document.getElementsByClassName('main-content');     
       let umaNewSection = document.createElement('section');
       umaNewSection.className = 'left-content';
       mainAnterior[0].appendChild(umaNewSection);
       console.log(mainAnterior)
 
       // exercicio 6
-      
+      mainAnterior = document.getElementsByTagName('main')
+      let doisNewSection = document.createElement('section');
+      doisNewSection.className = 'right-content';
+      mainAnterior[0].appendChild(doisNewSection);
+      console.log(mainAnterior);      
   </script>
 </body>
 </html>
