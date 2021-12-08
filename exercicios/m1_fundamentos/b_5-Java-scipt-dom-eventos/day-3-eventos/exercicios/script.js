@@ -25,9 +25,14 @@ function addNumbersDeze() {
     liDay.innerText = day;
     // console.log(liDay)
     ulDay.appendChild(liDay);
-    if (day == 24 || day == 25 || day == 31) {
+    if (day == 24 || day == 31) {
       liDay.className += ' holiday';
+    } else if (day === 4 || day === 11 || day === 18) {
+      liDay.className += ' friday';
+    } else if (day === 25) {
+      liDay.className += ' holiday friday';
     }
   }
+  
 }
 addNumbersDeze();
