@@ -36,3 +36,14 @@ function addNumbersDeze() {
   
 }
 addNumbersDeze();
+
+// EXERCICIO 2
+const feriado = 'Feriados';
+function criaFeriados() {
+  let buttCont = document.querySelector('.buttons-container');
+  let buttonFeriado = document.createElement('button');
+  buttonFeriado.id = 'btn-holiday';
+  buttonFeriado.innerText = feriado;
+  buttCont.appendChild(buttonFeriado);
+}
+criaFeriados()
