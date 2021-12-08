@@ -27,4 +27,4 @@ function addNumbersDeze() {
     ulDay.appendChild(liDay);
   }
 }
-addNumbersDeze()
+addNumbersDeze();
