@@ -25,6 +25,9 @@ function addNumbersDeze() {
     liDay.innerText = day;
     // console.log(liDay)
     ulDay.appendChild(liDay);
+    if (day == 24 || day == 25 || day == 31) {
+      liDay.className += ' holiday';
+    }
   }
 }
 addNumbersDeze();
