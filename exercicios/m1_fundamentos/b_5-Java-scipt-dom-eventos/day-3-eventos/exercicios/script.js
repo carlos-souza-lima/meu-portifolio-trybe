@@ -54,14 +54,19 @@ console.log(buttFeriado)
 buttFeriado.addEventListener("click", 
 function ()  {
   console.log('oi')
+  let diasFeriado = document.getElementsByClassName('day holiday');
+  for (let i in diasFeriado){
+    diasFeriado[i].style.color = 'red';
+    diasFeriado[i].style.backgroundColor = 'green';
+  }
   
-  // let diasFeriado = document.getElementsByClassName('day holiday');
-  // for (let i in diasFeriado){
-  //   diasFeriado[i]= document.getElementsByClassName('day holiday').style.color= 'red'; 
-  // }
   })
  
 
+  // let diasFeriado = document.getElementsByClassName('day holiday');
+  // for (let i in diasFeriado){
+  //   diasFeriado[i].style.color = 'red'; 
+  // }
 
 
 
