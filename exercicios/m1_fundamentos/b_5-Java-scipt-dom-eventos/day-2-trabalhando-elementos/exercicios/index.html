@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <script>
+      // exercicio 1
+      let newHum = document.createElement('h1');
+      newHum.innerText = 'Exercício 5.2 - JavaScript';
+      console.log(newHum);
+      document.body.appendChild(newHum);
+
+      //exercicios 2
+      let newMain = document.createElement('main');
+      newMain.className = 'main-content';
+      console.log(newMain)
+      document.body.appendChild(newMain);
+
+      // exercicio 3
+      let mainAnterior = document.getElementsByTagName('main')
+      console.log(mainAnterior);
+      let newSection = document.createElement('section');
+      newSection.className = 'center-content';
+      console.log(newSection);
+      mainAnterior[0].appendChild(newSection);
+    
+      // exercicio 4
+      let sectionAnterior = document.getElementsByClassName('center-content');
+      console.log(sectionAnterior);
+      let newP = document.createElement('p');
+      newP.innerText = 'Estou apredendo JavaScript, Esta sendo bem complicado.';
+      console.log(newP);
+      sectionAnterior[0].appendChild(newP);
+      
+      // exercicio 5
+      mainAnterior = document.getElementsByClassName('main-content');     
+      let umaNewSection = document.createElement('section');
+      umaNewSection.className = 'left-content';
+      mainAnterior[0].appendChild(umaNewSection);
+      console.log(mainAnterior)
+
+      // exercicio 6
+      mainAnterior = document.getElementsByTagName('main')
+      let doisNewSection = document.createElement('section');
+      doisNewSection.className = 'right-content';
+      mainAnterior[0].appendChild(doisNewSection);
+      console.log(mainAnterior);
+      
+      // exercicio 7 
+      let section5Anterior = document.getElementsByClassName('left-content');
+      console.log(section5Anterior);
+      let image = document.createElement('img');
+      image.className = 'small-image';
+      console.log(image);
+      image.src = "https://picsum.photos/200";
+      section5Anterior[0].appendChild(image);
+
+      // exercicio 8
+      let elements = [
+        'um', 'dois', 'tres', 'quaatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'
+      ];
+      let section6Anterior = document.getElementsByClassName('right-content');
+      let newList = document.createElement('ul');
+      console.log(newList)
+      for (let elem of elements) {
+        let elemento = document.createElement('li')
+        elemento.innerText = elem;
+        newList.appendChild(elemento)
+      }
+      section6Anterior[0].appendChild(newList)
+
+      // exercicio 9 
+      mainAnterior = document.getElementsByClassName('main-content');
+      console.log(mainAnterior);
+      function createHTres(quant) { 
+        for (let i = 0; i < quant; i += 1) {
+          let h3PraCriar= document.createElement('h3');
+          console.log(h3PraCriar);
+          h3PraCriar.innerText = 'teste';
+          mainAnterior[0].appendChild(h3PraCriar);
+        }
+      }     
+      createHTres('3');    
+      
+      // PARTE 2
+
+      //EXERCICIO 1
+          //funciona pois esta variavel ja foi declarada a cima, então seria so adicionar um nome a classe.
+      newHum.className = 'title';
+      //ou 
+          //caso essa TAG ainda não tivesse sido capturada.
+      let classParaHum = document.querySelector('h1');
+      classParaHum.className = 'title';
+
+      //exercicio 2
+      let tagsHTres = document.querySelectorAll('h3');
+          //captura as tags em uma NODELIST.
+      console.log(tagsHTres);
+        // quando a função for chamada vai executar o comando
+      function adicionaClass (tagsHTres) {
+        //para cada valor da NODELIST:
+        for (let k in tagsHTres) {
+            //adiciona a classe description.
+          tagsHTres[k].className = 'description';
+        }
+      }
+      //chama a função e declara o paramentro a ser usado
+      adicionaClass(tagsHTres);
+
+      //EXERCICIO 3 
+     umaNewSection.remove();
+
+    //  //EXERCICIO 4
+    //  let marginDaSecao = document.doisNewSection.style
+    //  console.log(marginDaSecao)
+  </script>  
+</body>
+</html>
