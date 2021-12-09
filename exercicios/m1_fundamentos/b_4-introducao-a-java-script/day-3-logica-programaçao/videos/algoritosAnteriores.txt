@@ -1,0 +1,31 @@
+/* trabalhando os algoritimos */
+
+EXERCICIOs-> day-2
+
+EX 1 
+    1. criar um array  -> let nomeArray [];
+    2. passar por todos os valores->  for;
+        2.1 imprimir todos os valores  -> console.log;
+    3. finalizar operação    
+
+EX 2 
+    1. criar um array -> let nomeArray [];
+    2. criar uma variavel para armazenar o valor da soma -> let nomeVariavel;
+    3. passar por todos os valores do array -> for;
+        3.1  somar o valor atual a variavel  -> nome nomeVariavel += valor atual
+    4. imprima o resultadado da soma de todos os valores -> console.log();
+    5. finaliza a operação
+
+EX 3
+    1. criar um array -> let nomeArray [];
+    2. criar uma variavel para armazenar o total da soma -> let soma;
+    3. criar uma variavel para armazenar o resultadado da divisão -> let divisão;
+    4. soamar todos os valores -> for;
+        4.1 passar por todos os valores
+        4.2 somar o valor atual com a variavel soma ->  soma += valor atual
+        4.3 armazenar o valor da soma na variavel -> soma = soma
+        4.4 finaliza a repetição
+    5. dividir o valor total da soma pelo numero total de elementos da array -> disisão = (soma) / (array[elementos]);
+        5.1 armazena o valor da divisão -> disisão = divisão
+    6. imprime resultado da divisão -> console.log();
+    7. finaliza a operação.
