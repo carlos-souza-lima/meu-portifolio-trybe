@@ -4,20 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>CALCULADORA</h1>
-  <form>        
-      <label><input id="a" type="text"></label>
-          <br>
-      <label><input id="b" type="text"></label>
+  <h1 class="title">CALCULADORA</h1>
+  <form class="form">   
+      <p>Digite o 1º numero</p>    
+      <label><input id="a" type="number"></label>
         
-      <button id="adic">+</button>
-      <button id="sub">-</button>        
-      <button id="mult">*</button>        
-      <button id="divi">/</button> 
-      <div class="resultado"><p class="pResultado"></p></div>      
+      <p>Digite o 2º numero</p>    
+      <label><input id="b" type="number"></label>
+        
+      <p>selecione a Operação</p>
+      <section class="controles">
+        <button id="adic" type="button">+</button>
+        <button id="sub" type="button">-</button>
+        <button id="mult" type="button">*</button>
+        <button id="divi" type="button">/</button>
+      </section>
+      <p>o resultado é:</p>
+      <div class="resultado"><p class="pResultado"></p></div>  
+      <button id="zera" >Zerar Valores</button>    
   </form>
   <script src="script.js"></script>
 </body>
