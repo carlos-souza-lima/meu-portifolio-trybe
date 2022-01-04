@@ -1,0 +1,32 @@
+ol li {
+    background-color: yellow;
+}
+.n-par {
+    color: green;
+}
+.n-impar {
+    text-transform: uppercase;
+}
+h1, h2, h3{
+    color: red;
+}
+h1{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+em {
+    font-weight: bold;
+}
+.primeiros-itens {
+    color: blue;
+}
+.java {
+    background-color: pink;
+}
+ul.aliados li:hover {
+    font-weight: bold;
+        
+}
