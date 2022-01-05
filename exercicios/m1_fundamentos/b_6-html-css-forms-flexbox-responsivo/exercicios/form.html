@@ -18,9 +18,21 @@
       <label for="cpf-usuario">CPF: </label>
       <input type="text" name="cpf" id="cpf-usuario" maxlength="11" placeholder="Digite seu CPF" required>
       <br>
-      
+      <label for="endereço-usuario">Endereço: </label>
+      <input type="text" name="endereço" id="endereço-usuario" maxlength="200" placeholder="Digite seu Endereço" required>
+      <br> 
+      <label for="cidade-usuario">Cidade: </label>
+      <input type="text" name="cidade" id="cidade-usuario" maxlength="28" placeholder="Digite sua Cidade" required>
+      <br>
+      <label for="estado-usuario">Estado: </label>
+      <select name="estado" id="estado-usuario" name="estado" required>
+        <option value=""></option>
+      </select>
+      <br>
+      <label for="">Tipo de moradia: </label>
+      <label for="tipo-casa"><input type="radio" name="tipo" id="tipo-casa" required>Casa</label>
+      <label for="tipo-apartamento"><input type="radio" name="tipo" id="tipo-apartamento" required>Apartamento</label>
   </fieldset>
-
   <script src="script.js"></script>
 </body>
 </html>
