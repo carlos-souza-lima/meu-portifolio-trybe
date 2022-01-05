@@ -8,31 +8,53 @@
   <title>Exercicio Formulario</title>
 </head>
 <body>
-  <fieldset>
-      <label for="nome-usuario">Nome:</label>
-      <input type="text" name="nome" id="nome-usuario" maxlength="40" placeholder="Digite seu nome" required>
+  <form action="">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+        <label for="nome-usuario">Nome:</label>
+        <input type="text" name="nome" id="nome-usuario" maxlength="40" placeholder="Digite seu nome" required>
+        <br>
+        <label for="email-usuario">E-mail: </label>
+        <input type="email" name="email" id="email-usuario" maxlength="50" placeholder="Digite seu E-mail" required>
+        <br>
+        <label for="cpf-usuario">CPF: </label>
+        <input type="text" name="cpf" id="cpf-usuario" maxlength="11" placeholder="Digite seu CPF" required>
+        <br>
+        <label for="endereço-usuario">Endereço: </label>
+        <input type="text" name="endereço" id="endereço-usuario" maxlength="200" placeholder="Digite seu Endereço" required>
+        <br>
+        <label for="cidade-usuario">Cidade: </label>
+        <input type="text" name="cidade" id="cidade-usuario" maxlength="28" placeholder="Digite sua Cidade" required>
+        <br>
+        <label for="estado-usuario">Estado: </label>
+        <select name="estado" id="estado-usuario" name="estado" required>
+          <option value=""></option>
+        </select>
+        <br>
+        <label for="">Tipo de moradia: </label>
+        <label for="tipo-casa"><input type="radio" name="tipoDeMoradia" id="tipo-casa" value="casa" required>Casa</label>
+        <label for="tipo-apartamento"><input type="radio" name="tipoDeMoradia" id="tipo-apartamento" value="apartamento" required>Apartamento</label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Sobre o seu ultimo emprego</legend>
+      <label for="resumo-do-curriculo">Breve resumo do seu curriculo:</label>
       <br>
-      <label for="email-usuario">E-mail: </label>
-      <input type="email" name="email" id="email-usuario" maxlength="50" placeholder="Digite seu E-mail" required>
+      <textarea name="resumo" id="resumo-do-curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
       <br>
-      <label for="cpf-usuario">CPF: </label>
-      <input type="text" name="cpf" id="cpf-usuario" maxlength="11" placeholder="Digite seu CPF" required>
+      <label for="cargo-emprego">Cargo: </label>
+      <input type="text" name="cargo" id="cargo-emprego" maxlength="40" required>
       <br>
-      <label for="endereço-usuario">Endereço: </label>
-      <input type="text" name="endereço" id="endereço-usuario" maxlength="200" placeholder="Digite seu Endereço" required>
-      <br> 
-      <label for="cidade-usuario">Cidade: </label>
-      <input type="text" name="cidade" id="cidade-usuario" maxlength="28" placeholder="Digite sua Cidade" required>
+      <label for="descriçao-cargo">Descreva seu cargo: </label>
+      <input type="text" name="descriçao do cargo" id="descriçao-cargo" maxlength="500" required>
       <br>
-      <label for="estado-usuario">Estado: </label>
-      <select name="estado" id="estado-usuario" name="estado" required>
-        <option value=""></option>
-      </select>
-      <br>
-      <label for="">Tipo de moradia: </label>
-      <label for="tipo-casa"><input type="radio" name="tipo" id="tipo-casa" required>Casa</label>
-      <label for="tipo-apartamento"><input type="radio" name="tipo" id="tipo-apartamento" required>Apartamento</label>
-  </fieldset>
+      <label for="data-de-inicio">Data de inicio:</label>
+      <input type="date" name="dataInicio" id="data-de-inicio" required>
+    </fieldset>
+    <br>
+    <button type="submit"> enviar </button>
+    <button type="reset">limpar</button>
+  </form>
   <script src="script.js"></script>
 </body>
 </html>
