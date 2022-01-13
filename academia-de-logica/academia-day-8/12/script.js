@@ -40,6 +40,6 @@ function multiplicacao() {
 
 divi.addEventListener('click', divisao)
 function divisao() {
-  let multAeB = resgateA() / resgateB()
+  let diviAeB = resgateA() / resgateB()
   pResultado.innerText = diviAeB;
 }

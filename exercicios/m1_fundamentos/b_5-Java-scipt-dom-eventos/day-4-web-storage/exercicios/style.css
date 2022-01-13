@@ -1,0 +1,30 @@
+* {
+    margin: 5px;
+}
+.titleP {
+    text-align: center;
+}
+.buttons {
+    width: 60px;
+    height: 20px;
+    
+}
+.cBcSectionUm {
+    display: block;
+}
+.p {
+    text-align: justify;
+}
+.sectionUm {    
+    padding: 5px;
+    width: 49%;   
+    float: right;    
+}
+.sectionDois {
+    padding: 5px;
+    width: 49%;  
+    
+}
+h3 {
+    text-align: center;
+}
