@@ -15,29 +15,40 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-    const value1 = document.getElementById('value1')/* .value; */
-    const value2 = document.getElementById('value2')/* .value; */
-
-    function verifica () {
-        if (value1.value === '' || value2.value === '') {
-            document.getElementById('result').innerHTML = `Adicione mais um numero`;
-            throw new Error ('Adicione mais um numero')
-        }
-        // else if {
-
-        // }
-        sum()
+    function verifica (value1, value2) {
+        if (value1 === '' || value2 === '') {
+        throw new Error('Adicione mais um numero');
+      }
     }
 
+    function isNumber (value1, value2) {
+      if (isNaN(value1) || isNaN(value2)) {
+        throw new Error ('Abos os valores devem ser numericos');
+    }
+    }
+
+    
     function sum() {
-        const result = parseInt(value1.value) + parseInt(value2.value);
-        document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      try {
+        const value1 = document.getElementById('value1').value;
+        const value2 = document.getElementById('value2').value;
+        verifica(value1, value2);
+        isNumber(value1, value2);
+        const result = parseInt(value1) + parseInt(value2);
+        document.getElementById('result').innerHTML = `Resultado: ${result}`;  
+      }
+      catch (erro) {
+        document.getElementById('result').innerHTML = `Erro: ${erro.message}`;
+      }
+      finally {
         document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
+        document.getElementById('value2').value = ''; 
+      }
     }
-    window.onload = () => {
+
+     window.onload = () => {
       const button = document.getElementById('button');
-      button.addEventListener('click', verifica);
+      button.addEventListener('click', sum);
     }
   </script>
 </body>
