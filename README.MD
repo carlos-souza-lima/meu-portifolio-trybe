@@ -10,7 +10,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ### Bloco 1 - Introdução - Unix & Shell
 
-- [x]1-3: *Unix & Bash - Parte 1*
+-[x] 1-3: *Unix & Bash - Parte 1*
 
 [x] 1-3: *Unix & Bash - Parte 2*
 
